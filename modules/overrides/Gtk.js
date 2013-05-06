@@ -26,6 +26,7 @@ function _init() {
     Gtk = this;
 
     Gtk.Builder.prototype.connect_signals = GtkBuilder.connect_signals;
+    Gtk.Builder.prototype.disconnect_signals = GtkBuilder.disconnect_signals;
 
     Gtk.Window.prototype.decorate = function () {
         var decorator = new Ctk.WindowDecorator ();
